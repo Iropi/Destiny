@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hcX-OV-RAc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rBh-hO-VSN">
+            <objects>
+                <viewController id="hcX-OV-RAc" customClass="ViewController" customModule="Destiny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RIg-VY-NBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-Nb-QDf">
+                                <rect key="frame" x="20" y="44" width="374" height="482.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Hff-Pn-PeF">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Hff-Pn-PeF" secondAttribute="height" multiplier="1:1" id="OBq-Fb-0fj"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cJY-qY-d6f" appends="YES" id="1Q8-Ix-NOf"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destiny Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBA-LO-oD4">
+                                        <rect key="frame" x="0.0" y="382" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Destiny Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9O-gs-pwG">
+                                        <rect key="frame" x="0.0" y="410.5" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-L4-YwW">
+                                        <rect key="frame" x="0.0" y="452.5" width="374" height="30"/>
+                                        <state key="normal" title="Set Default Label"/>
+                                        <connections>
+                                            <action selector="setDefaultLabel:" destination="hcX-OV-RAc" eventType="touchUpInside" id="5pQ-E5-fiZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B9O-gs-pwG" secondAttribute="trailing" id="0Ip-iC-bFO"/>
+                                    <constraint firstItem="Hff-Pn-PeF" firstAttribute="top" secondItem="NSj-Nb-QDf" secondAttribute="top" id="4LP-0Y-xhr"/>
+                                    <constraint firstAttribute="trailing" secondItem="qKS-L4-YwW" secondAttribute="trailing" id="669-CI-1R0"/>
+                                    <constraint firstItem="NBA-LO-oD4" firstAttribute="leading" secondItem="NSj-Nb-QDf" secondAttribute="leading" id="9HG-em-5Qh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hff-Pn-PeF" secondAttribute="trailing" id="D0G-FA-Avp"/>
+                                    <constraint firstItem="B9O-gs-pwG" firstAttribute="leading" secondItem="NSj-Nb-QDf" secondAttribute="leading" id="D0f-21-h8d"/>
+                                    <constraint firstItem="NBA-LO-oD4" firstAttribute="top" secondItem="Hff-Pn-PeF" secondAttribute="bottom" constant="8" id="IcN-gr-3Vk"/>
+                                    <constraint firstItem="Hff-Pn-PeF" firstAttribute="leading" secondItem="NSj-Nb-QDf" secondAttribute="leading" id="LV4-g8-1vy"/>
+                                    <constraint firstItem="B9O-gs-pwG" firstAttribute="leading" secondItem="NSj-Nb-QDf" secondAttribute="leading" id="SsM-0N-29C"/>
+                                    <constraint firstItem="qKS-L4-YwW" firstAttribute="leading" secondItem="NSj-Nb-QDf" secondAttribute="leading" id="TfC-cw-CfZ"/>
+                                    <constraint firstItem="qKS-L4-YwW" firstAttribute="top" secondItem="B9O-gs-pwG" secondAttribute="bottom" constant="8" id="eYL-if-AtR"/>
+                                    <constraint firstItem="B9O-gs-pwG" firstAttribute="top" secondItem="NBA-LO-oD4" secondAttribute="bottom" constant="8" id="nJG-9d-efI"/>
+                                    <constraint firstAttribute="trailing" secondItem="B9O-gs-pwG" secondAttribute="trailing" id="wdb-NZ-Bfd"/>
+                                    <constraint firstAttribute="trailing" secondItem="NBA-LO-oD4" secondAttribute="trailing" id="yke-aC-6cK"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-Az-snU" customClass="MarkDestiny" customModule="Destiny" customModuleProvider="target">
+                                <rect key="frame" x="132" y="535" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mee-Az-snU" firstAttribute="centerX" secondItem="NSj-Nb-QDf" secondAttribute="centerX" id="ET2-6a-790"/>
+                            <constraint firstItem="Wl8-Ln-aZv" firstAttribute="bottom" secondItem="Mee-Az-snU" secondAttribute="bottom" constant="177" id="IxG-yP-PTK"/>
+                            <constraint firstItem="NSj-Nb-QDf" firstAttribute="leading" secondItem="Wl8-Ln-aZv" secondAttribute="leading" constant="20" id="QW3-As-5zl"/>
+                            <constraint firstItem="NSj-Nb-QDf" firstAttribute="top" secondItem="Wl8-Ln-aZv" secondAttribute="top" id="Sxt-Cj-lFq"/>
+                            <constraint firstItem="Wl8-Ln-aZv" firstAttribute="trailing" secondItem="NSj-Nb-QDf" secondAttribute="trailing" constant="20" id="Tx7-Of-OIa"/>
+                            <constraint firstItem="Mee-Az-snU" firstAttribute="top" secondItem="NSj-Nb-QDf" secondAttribute="bottom" constant="8.5" id="rZ5-SP-IgJ"/>
+                            <constraint firstItem="Mee-Az-snU" firstAttribute="leading" secondItem="Wl8-Ln-aZv" secondAttribute="leading" constant="132" id="xD3-le-IP8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wl8-Ln-aZv"/>
+                    </view>
+                    <connections>
+                        <outlet property="destinyImageView" destination="Hff-Pn-PeF" id="wMg-fj-vd3"/>
+                        <outlet property="destinyNameLabel" destination="NBA-LO-oD4" id="kcv-Qc-fW8"/>
+                        <outlet property="destinyNameTextField" destination="B9O-gs-pwG" id="3oS-yg-ePa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jw2-R7-Rqy" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cJY-qY-d6f">
+                    <connections>
+                        <action selector="selectImageFromLibrary:" destination="hcX-OV-RAc" id="j9u-bR-n5E"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DefaultImage" width="256" height="256"/>
+    </resources>
+</document>
